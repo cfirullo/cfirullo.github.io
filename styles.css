@@ -164,3 +164,227 @@ footer {
         gap: 12px;
     }
 }
+/* Aggiungi o sostituisci in styles.css */
+.min-h-screen {
+    min-height: 100vh;
+}
+
+.bg-white {
+    background-color: #ffffff;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.sticky {
+    position: sticky;
+}
+
+.z-50 {
+    z-index: 50;
+}
+
+.shadow-sm {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.max-w-6xl {
+    max-width: 1280px;
+}
+
+.max-w-7xl {
+    max-width: 1400px;
+}
+
+.max-w-2xl {
+    max-width: 672px;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.px-4 {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.py-3 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.py-8 {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.py-6 {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.text-lg {
+    font-size: 18px;
+}
+
+.text-base {
+    font-size: 16px;
+}
+
+.text-sm {
+    font-size: 14px;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.font-medium {
+    font-weight: 500;
+}
+
+.text-gray-800 {
+    color: #1f2937;
+}
+
+.text-gray-600 {
+    color: #4b5563;
+}
+
+.text-gray-500 {
+    color: #6b7280;
+}
+
+.text-gray-400 {
+    color: #9ca3af;
+}
+
+.text-gray-900 {
+    color: #111827;
+}
+
+.text-teal-600 {
+    color: #00d1b2;
+}
+
+.text-teal-500 {
+    color: #14b8a6;
+}
+
+.bg-teal-500 {
+    background-color: #14b8a6;
+}
+
+.hover\:text-gray-900:hover {
+    color: #111827;
+}
+
+.hover\:bg-gray-50:hover {
+    background-color: #f9fafb;
+}
+
+.border-t {
+    border-top-width: 1px;
+}
+
+.border-gray-200 {
+    border-color: #e5e7eb;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.tracking-wider {
+    letter-spacing: 0.05em;
+}
+
+.mb-4 {
+    margin-bottom: 16px;
+}
+
+.mb-6 {
+    margin-bottom: 24px;
+}
+
+.mb-8 {
+    margin-bottom: 32px;
+}
+
+.mb-12 {
+    margin-bottom: 48px;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.items-start {
+    align-items: flex-start;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.w-0\.5 {
+    width: 0.125rem;
+}
+
+.h-6 {
+    height: 1.5rem;
+}
+
+.self-center {
+    align-self: center;
+}
+
+.mt-1 {
+    margin-top: 4px;
+}
+
+.w-4 {
+    width: 16px;
+}
+
+.h-4 {
+    height: 16px;
+}
+
+.prose {
+    max-width: 65ch;
+}
+
+.prose-sm {
+    font-size: 14px;
+}
+
+.prose p {
+    margin-bottom: 16px;
+}
+
+@media (max-width: 768px) {
+    .md\:hidden {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .md\:block {
+        display: block;
+    }
+    .md\:flex {
+        display: flex;
+    }
+}
