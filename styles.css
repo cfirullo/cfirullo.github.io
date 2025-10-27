@@ -27,7 +27,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 2px solid #84AED9;
+    border-bottom: 2px solid var(--accent-color);
     background: var(--bg-color);
     z-index: 1000;
 }
@@ -60,9 +60,9 @@ nav {
 /* Main Content */
 main {
     padding: 80px 40px 60px;
-    max-width: 900px;
+    max-width: 672px; /* Ispirato a justinhadad.com */
     margin: 0 auto;
-    text-align: center;
+    text-align: left; /* Per il layout delle sezioni */
 }
 
 h1 {
@@ -72,27 +72,30 @@ h1 {
 }
 
 h2 {
-    font-size: 24px;
+    font-size: 18px; /* Ridotto per imitare Justin */
     font-weight: bold;
-    margin-bottom: 20px;
+    color: var(--text-primary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 24px;
 }
 
 h3 {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     margin: 24px 0 12px;
     color: var(--accent-color);
 }
 
 h4 {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: normal;
     color: var(--text-secondary);
     margin-bottom: 8px;
 }
 
 p {
-    font-size: 16px;
+    font-size: 14px;
     color: var(--text-secondary);
     margin-bottom: 16px;
 }
@@ -132,45 +135,12 @@ footer {
     text-align: center;
     color: var(--text-secondary);
     font-size: 13px;
-    border-top: 1px solid #e0e0e0;
+    border-top: 2px solid var(--accent-color);
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-    nav {
-        padding: 16px 20px;
-        flex-direction: column;
-        gap: 12px;
-    }
-
-    .nav-links {
-        gap: 16px;
-    }
-
-    main {
-        padding: 60px 20px 40px;
-    }
-
-    h1 {
-        font-size: 24px;
-    }
-
-    h2 {
-        font-size: 20px;
-    }
-
-    .contact-links {
-        flex-direction: column;
-        gap: 12px;
-    }
-}
-/* Aggiungi o sostituisci in styles.css */
+/* Nuove regole per il layout ispirato a justinhadad.com */
 .min-h-screen {
     min-height: 100vh;
-}
-
-.bg-white {
-    background-color: #ffffff;
 }
 
 .flex {
@@ -191,18 +161,6 @@ footer {
 
 .shadow-sm {
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
-}
-
-.max-w-6xl {
-    max-width: 1280px;
-}
-
-.max-w-7xl {
-    max-width: 1400px;
-}
-
-.max-w-2xl {
-    max-width: 672px;
 }
 
 .mx-auto {
@@ -250,52 +208,32 @@ footer {
     font-weight: 500;
 }
 
-.text-gray-800 {
-    color: #1f2937;
+.text-primary {
+    color: var(--text-primary);
 }
 
-.text-gray-600 {
-    color: #4b5563;
+.text-secondary {
+    color: var(--text-secondary);
 }
 
-.text-gray-500 {
-    color: #6b7280;
+.text-accent {
+    color: var(--accent-color);
 }
 
-.text-gray-400 {
-    color: #9ca3af;
+.bg-accent {
+    background-color: var(--accent-color);
 }
 
-.text-gray-900 {
-    color: #111827;
-}
-
-.text-teal-600 {
-    color: #00d1b2;
-}
-
-.text-teal-500 {
-    color: #14b8a6;
-}
-
-.bg-teal-500 {
-    background-color: #14b8a6;
-}
-
-.hover\:text-gray-900:hover {
-    color: #111827;
-}
-
-.hover\:bg-gray-50:hover {
-    background-color: #f9fafb;
+.hover\:text-accent:hover {
+    color: var(--accent-color);
 }
 
 .border-t {
     border-top-width: 1px;
 }
 
-.border-gray-200 {
-    border-color: #e5e7eb;
+.border-accent {
+    border-color: var(--accent-color);
 }
 
 .uppercase {
@@ -377,6 +315,17 @@ footer {
 @media (max-width: 768px) {
     .md\:hidden {
         display: none;
+    }
+    nav {
+        padding: 16px 20px;
+        flex-direction: column;
+        gap: 12px;
+    }
+    .nav-links {
+        gap: 16px;
+    }
+    main {
+        padding: 60px 20px 40px;
     }
 }
 
