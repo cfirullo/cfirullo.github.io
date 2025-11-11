@@ -3,26 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Research - Cristiana Firullo</title>
+    <title>Research | Cristiana Firullo</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <nav>
-        <a href="index.html" class="logo">Cristiana Firullo</a>
-        <ul class="nav-links">
-            <li><a href="index.html" class="nav-link">Home</a></li>
-            <li><a href="about.html" class="nav-link">About</a></li>
-            <li><a href="experience.html" class="nav-link">Experience</a></li>
-            <li><a href="research.html" class="nav-link">Research</a></li>
-            <li><a href="contact.html" class="nav-link">Contact</a></li>
-        </ul>
+        <div class="container">
+            <a href="index.html" class="logo">Cristiana Firullo</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="research.html" class="nav-link">Research</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
     </nav>
     <main>
-        <h2>Research</h2>
-        <p>My research explores the relationship between online user behavior and platform design, aiming to develop new theories of harm focusing on privacy and cognitive load. I also analyze the data economy to understand platforms' incentives, contributing to improved antitrust and consumer protection regulations.</p>
+        <section class="container hero page-hero">
+            <span class="hero-eyebrow">Research portfolio</span>
+            <h1>Examining how design incentives shape power, privacy, and participation online.</h1>
+            <p>My projects map the interface decisions that govern data flows and attention, building evidence that informs antitrust, privacy, and consumer protection frameworks.</p>
+        </section>
+
+        <section class="container section">
+            <div class="section-header">
+                <h2 class="section-title">Selected projects</h2>
+                <p class="section-subtitle">A glimpse into the questions that guide my current scholarship and collaborations.</p>
+            </div>
+            <div class="research-list">
+                <article class="research-item">
+                    <span class="meta">Working paper</span>
+                    <h3>Dark patterns, bright lines: Measuring deception in large platform flows</h3>
+                    <p>Building a framework that scores interface dark patterns using lab experiments and large-scale audits, offering regulators a repeatable checklist for enforcement.</p>
+                </article>
+                <article class="research-item">
+                    <span class="meta">In progress</span>
+                    <h3>Privacy fatigue and the economics of consent</h3>
+                    <p>Exploring how repetition and design nudges influence disclosure decisions, with implications for privacy regulation and transparency mandates.</p>
+                </article>
+                <article class="research-item">
+                    <span class="meta">Collaboration</span>
+                    <h3>Co-designing accountability metrics with civil society</h3>
+                    <p>Partnering with nonprofits to translate empirical insights into community-led audits that keep platforms responsive to marginalized groups.</p>
+                </article>
+            </div>
+        </section>
     </main>
     <footer>
-        <p>&copy; 2025 Cristiana Firullo. All rights reserved.</p>
-    <amp src="scripts.js"></script>
+        <div class="container">
+            <p>&copy; 2025 <span>Cristiana Firullo</span>. All rights reserved.</p>
+            <p>Built with a research-first mindset for thoughtful digital futures.</p>
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
 </body>
 </html>
