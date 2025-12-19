@@ -7,52 +7,106 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
     <nav>
         <div class="container">
             <a href="index.html" class="logo">Cristiana Firullo</a>
             <ul class="nav-links">
                 <li><a href="index.html" class="nav-link">Home</a></li>
                 <li><a href="about.html" class="nav-link">About</a></li>
-                <li><a href="research.html" class="nav-link">Research</a></li>
+                <li><a href="research.html" class="nav-link active">Research</a></li>
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
         </div>
     </nav>
+
     <main>
+
         <section class="container hero page-hero">
             <span class="hero-eyebrow">Research portfolio</span>
-             <p>My projects map the interface decisions that govern data flows and attention, building evidence that informs antitrust, privacy, and consumer protection frameworks.</p>
+            <p>
+                My projects study how interface design, data flows, and algorithmic optimization shape attention,
+                market outcomes, and consumer welfare, with implications for antitrust, privacy, and platform regulation.
+            </p>
         </section>
 
         <section class="container section">
             <div class="section-header">
                 <h2 class="section-title">Selected projects</h2>
-                  </div>
+            </div>
+
             <div class="research-list">
+
+                <!-- PROJECT 1 -->
                 <article class="research-item">
                     <span class="meta">Working paper</span>
-                    <h3> Beyond Search: LLMs Adoption and Web Traffic Concentration</h3>
-                    <p> with Samira Gholami, Cristobal Cheyre and Alessandro Acquisti.</p>
+                    <h3>Beyond Search: LLMs Adoption and Web Traffic Concentration</h3>
+                    <p class="research-authors">
+                        with Samira Gholami, Cristobal Cheyre, and Alessandro Acquisti
+                    </p>
+                    <p class="research-abstract">
+                        This paper studies how the diffusion of large language models (LLMs) as consumer-facing
+                        information intermediaries reshapes web traffic allocation and market concentration.
+                        Using large-scale behavioral data, we document substitution patterns between traditional
+                        search engines, LLM-based interfaces, and downstream content providers. We show that LLM
+                        adoption alters referral flows and reduces direct traffic to certain classes of websites,
+                        with heterogeneous effects across content categories. These shifts have implications for
+                        market power, content sustainability, and the measurement of concentration in digital markets.
+                        The results inform ongoing antitrust and platform governance debates around AI-driven intermediaries.
+                    </p>
                 </article>
+
+                <!-- PROJECT 2 -->
                 <article class="research-item">
                     <span class="meta">In progress</span>
                     <h3>Advertising and the Cost of Search</h3>
-                    <p> with Cristobal Cheyre and Alessandro Acquisti         
-                    </article>
+                    <p class="research-authors">
+                        with Cristobal Cheyre and Alessandro Acquisti
+                    </p>
+                    <p class="research-abstract">
+                        This project examines how advertising affects consumer search costs, consideration sets,
+                        and market outcomes in digital environments. Leveraging a large-scale field experiment with
+                        detailed browsing and advertising exposure data, we study how personalized and contextual
+                        ads shape information acquisition and navigation behavior. We quantify changes in search
+                        intensity, set composition, and downstream purchase decisions across experimental conditions.
+                        The analysis sheds light on the dual role of advertising as both an informational device
+                        and a potential distortion in consumer decision-making. The findings speak to debates in
+                        industrial organization, consumer protection, and digital advertising regulation.
+                    </p>
+                </article>
+
+                <!-- PROJECT 3 -->
                 <article class="research-item">
                     <span class="meta">In progress</span>
                     <h3>The Cursed Equilibrium of Algorithmic Traumatization</h3>
-                    <p></p>
+                    <p class="research-authors">
+                        Solo-authored
+                    </p>
+                    <p class="research-abstract">
+                        This paper develops a dynamic model of interaction between a profit-maximizing digital
+                        platform and users who may be vulnerable to certain categories of content. The platform
+                        optimizes engagement through adaptive recommendation algorithms that learn from past user
+                        behavior, while users exhibit myopia and limited awareness of long-run utility consequences.
+                        We show that engagement-based optimization can lead to a “cursed” equilibrium in which
+                        platforms rationally amplify triggering content, generating persistent welfare losses for users.
+                        The equilibrium arises even in the absence of malicious intent or informational asymmetries
+                        on the platform side. The model provides a theoretical foundation for understanding algorithmic
+                        harm and motivates policy interventions beyond standard transparency or disclosure tools.
+                    </p>
                 </article>
+
             </div>
         </section>
+
     </main>
+
     <footer>
         <div class="container">
             <p>&copy; 2025 <span>Cristiana Firullo</span>. All rights reserved.</p>
             <p>Built with a research-first mindset for thoughtful digital futures.</p>
         </div>
     </footer>
+
     <script src="scripts.js"></script>
 </body>
 </html>
