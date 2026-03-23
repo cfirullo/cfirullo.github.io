@@ -5,9 +5,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About | Cristiana Firullo</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* ── About page layout ── */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            gap: 3.5rem;
+            align-items: start;
+            margin-top: 2.5rem;
+        }
+
+        /* Photo card */
+        .about-photo-col {
+            position: sticky;
+            top: 6rem;
+        }
+
+        .about-photo-wrap {
+            width: 100%;
+            aspect-ratio: 3 / 4;
+            border-radius: 4px;
+            overflow: hidden;
+            background: #e8e4df;      /* placeholder bg while image loads */
+            box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+        }
+
+        .about-photo-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center top;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+
+        .about-photo-wrap img:hover {
+            transform: scale(1.02);
+        }
+
+        /* Caption / contact under photo */
+        .about-photo-meta {
+            margin-top: 1.1rem;
+            font-size: 0.82rem;
+            line-height: 1.6;
+            color: var(--color-muted, #888);
+        }
+
+        .about-photo-meta strong {
+            display: block;
+            font-size: 0.9rem;
+            color: var(--color-text, #222);
+            margin-bottom: 0.25rem;
+        }
+
+        .about-photo-meta a {
+            color: inherit;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
+        /* Text column */
+        .about-text-col p {
+            margin-bottom: 1.25rem;
+            line-height: 1.75;
+        }
+
+        /* Responsive */
+        @media (max-width: 720px) {
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            .about-photo-col {
+                position: static;
+                max-width: 240px;
+                margin: 0 auto;
+            }
+        }
+    </style>
 </head>
 <body>
-
     <nav>
         <div class="container">
             <a href="index.html" class="logo">Cristiana Firullo</a>
@@ -19,47 +96,70 @@
     </nav>
 
     <main>
-
-        <!-- INTRO -->
         <section class="container page-hero">
             <h1>About</h1>
-            <p>
-                I am a PhD Candidate in Information Science at Cornell University and an IvyPlus Scholar
-                in the Department of Economics at Stanford University. My research lies at the intersection of economics, behavioral science, and digital platforms.  I study online user behavior and digital market design, with a focus on advertising,
-                algorithmic recommendation systems, and data-driven intermediaries.My work combines field experiments, large-scale behavioral data, and theoretical modeling
-                to examine how platform design choices affect consumer welfare, market outcomes, and privacy.
-            </p>
-            <p>
-                I am currently co-leading the
-                <strong>Internet Behavior Experiment (IBE)</strong>,
-                a large-scale randomized field experiment designed to study online advertising,
-                tracking, and targeting across browsers, email, and mobile devices,
-                in collaboration with
-                <a href="https://mitsloan.mit.edu/faculty/directory/alessandro-acquisti" target="_blank">Alessandro Acquisti</a>,
-                <a href="https://ccheyre.github.io/" target="_blank">Cristobal Cheyre</a>,
-                and an interdisciplinary research team.
-            </p>
-             <p>
-                I received a BSc and an MSc in Economics and Social Sciences from Bocconi University,
-                where I specialized in Behavioral Economics and Industrial Organization. During my masters, I worked on empirical projects in digital markets and ad-tech with <a href="https://sites.google.com/view/francescodecarolis/home" target="_blank">
-                        Francesco Decarolis</a>. Before starting my PhD, I also worked for Compass Lexecon (London) and Oxera Consulting LLP in Oxford (UK). A detailed overview of my academic background, research, and experience
-                is available in my curriculum vitae:
-            </p>
 
-            <p>
-                <a href="CV_FIRULLO_DEC25.pdf" target="_blank" class="cv-link">
-                    Download CV (PDF)
-                </a>
-            </p>
+            <div class="about-grid">
+
+                <!-- ── LEFT: Photo ── -->
+                <div class="about-photo-col">
+                    <div class="about-photo-wrap">
+                        <!--
+                            Replace the src below with the actual filename once uploaded.
+                            e.g.  src="photo.jpg"
+                        -->
+                        <img
+                            src="a6201e19a0356b29.jpeg"
+                            alt="Cristiana Firullo"
+                            loading="lazy"
+                        />
+                    </div>
+                    <div class="about-photo-meta">
+                        <strong>Cristiana Firullo</strong>
+                        PhD Candidate, Information Science<br>
+                        Cornell University &amp; Stanford University<br>
+                        <a href="mailto:cf492@cornell.edu">cf492@cornell.edu</a>
+                    </div>
+                </div>
+
+                <!-- ── RIGHT: Bio ── -->
+                <div class="about-text-col">
+                    <p>
+                        I am a PhD Candidate in Information Science at Cornell University and an IvyPlus Scholar
+                        in the Department of Economics at Stanford University. My research lies at the intersection
+                        of economics, behavioral science, and digital platforms. I study online user behavior and
+                        digital market design, with a focus on advertising, algorithmic recommendation systems,
+                        and data-driven intermediaries. My work combines field experiments, large-scale behavioral
+                        data, and theoretical modeling to examine how platform design choices affect consumer
+                        welfare, market outcomes, and privacy.
+                    </p>
+                    <p>
+                        I am currently part of the
+                        <strong>Internet Behavior Experiment (IBE)</strong>,
+                        a large-scale randomized field experiment designed to study online advertising,
+                        tracking, and targeting across browsers, email, and mobile devices,
+                        in collaboration with
+                        <a href="https://mitsloan.mit.edu/faculty/directory/alessandro-acquisti" target="_blank">Alessandro Acquisti</a>,
+                        <a href="https://ccheyre.github.io/" target="_blank">Cristobal Cheyre</a> and Yucheng Li.
+                    </p>
+                    <p>
+                        I received a BSc and an MSc in Economics and Social Sciences from Bocconi University,
+                        where I specialized in Behavioral Economics and Industrial Organization. During my masters,
+                        I worked on empirical projects in digital markets and ad-tech with
+                        <a href="https://sites.google.com/view/francescodecarolis/home" target="_blank">Francesco Decarolis</a>.
+                        Before starting my PhD, I also worked for Compass Lexecon (London) and Oxera Consulting LLP
+                        in Oxford (UK). A detailed overview of my academic background, research, and experience
+                        is available in my curriculum vitae:
+                    </p>
+                    <p>
+                        <a href="CV_FIRULLO_DEC25.pdf" target="_blank" class="cv-link">
+                            Download CV (PDF)
+                        </a>
+                    </p>
+                </div>
+
+            </div>
         </section>
-
-
-            
-        </section>
-
-
-        </section>
-
     </main>
 
     <footer>
@@ -68,7 +168,6 @@
             <p>Academic website.</p>
         </div>
     </footer>
-
     <script src="scripts.js"></script>
 </body>
 </html>
