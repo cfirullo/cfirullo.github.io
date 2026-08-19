@@ -3,86 +3,250 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cristiana Firullo</title>
+<title>Research | Cristiana Firullo</title>
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
- 
+
 <nav>
   <div class="container">
     <a href="index.html" class="logo">Cristiana Firullo</a>
     <ul class="nav-links">
-      <li><a href="index.html" class="nav-link active">Home</a></li>
-      <li><a href="research.html" class="nav-link">Research</a></li>
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="research.html" class="nav-link active">Research</a></li>
     </ul>
   </div>
 </nav>
- 
+
 <main>
-  <section class="container">
-    <h1>About</h1>
- 
-    <div class="about-grid">
-      <div class="about-photo-col">
-        <div class="about-photo-wrap">
-          <img src="021a2748c1b8bfa7.jpeg" alt="Cristiana Firullo" loading="lazy" />
-        </div>
-        <div class="about-photo-meta">
-          <strong>Cristiana Firullo</strong>
-          PhD Candidate, Information Science<br>
-          Cornell University &amp; Stanford University<br>
-          <a href="mailto:cf528@cornell.edu">cf528@cornell.edu</a>
-          <a href="mailto:cfirullo@stanford.edu">cfirullo@stanford.edu</a>
-        </div>
-      </div>
- 
-      <div class="about-text-col">
-        <p>
-          I am a PhD Candidate at the Department of Information Science at Cornell, advised by
-          <a href="https://ccheyre.github.io/" target="_blank" rel="noopener noreferrer">Cristobal Cheyre</a> and
-          <a href="https://mitsloan.mit.edu/faculty/directory/alessandro-acquisti" target="_blank" rel="noopener noreferrer">Alessandro Acquisti</a>.
-          I am also a VSR at the Department of Economics at Stanford, supervised by
-          <a href="https://economics.stanford.edu/people/b-douglas-bernheim" target="_blank" rel="noopener noreferrer">Douglas Bernheim</a>.
-          My research lies at the intersection of industrial organization and behavioral economics, and aims
-          to understand digital markets and economic user behavior. I run experiments to study the
-          interaction between algorithms and user (or consumer) welfare, with a focus on online
-          advertising, tracking and targeting, algorithmic recommendation systems, and addiction in
-          digital platforms. My work combines field experiments, large-scale behavioral data, and
-          theoretical modeling to examine how platform design choices affect consumer welfare, market
-          outcomes, and privacy.
+  <section class="container page-hero">
+    <span class="hero-eyebrow">Research portfolio</span>
+    <p>
+      My projects study how interface design, data flows, and algorithmic optimization shape attention,
+      market outcomes, and consumer welfare, with implications for antitrust, privacy, and platform regulation.
+    </p>
+  </section>
+
+  <!-- ============ WORKING PAPERS ============ -->
+  <section class="container section">
+    <h2 class="section-title">Working papers</h2>
+
+    <div class="research-list">
+
+      <article class="research-item">
+        <h3>Beyond Search: LLM Adoption and Web Traffic Concentration</h3>
+        <p class="research-award">Best Student Paper Award, WISE 2025</p>
+        <p class="research-authors">with Samira Gholami, Cristobal Cheyre, and Alessandro Acquisti</p>
+        <p class="research-links">
+          <a class="paper-link"
+             href="https://kgi.georgetown.edu/wp-content/uploads/2026/02/Beyond-Search_Gholami_Firullo_Cheyre_Acquisti_79.pdf"
+             target="_blank" rel="noopener noreferrer">PDF</a>
         </p>
- 
-        <p>
-          My research is supported by LinkedIn, Amazon and Yuka. I believe that collaboration
-          with industries is necessary to understand the well functioning of markets.
+        <p class="research-abstract">
+          This paper studies how the diffusion of large language models (LLMs) as consumer-facing
+          information intermediaries reshapes web traffic allocation and market concentration.
+          Using large-scale behavioral data, we document substitution patterns between traditional
+          search engines, LLM-based interfaces, and downstream content providers, and show that LLM
+          adoption alters referral flows and concentrates attention away from the open web, with
+          heterogeneous effects across content categories. The results speak to ongoing antitrust and
+          platform-governance debates around AI-driven intermediaries.
         </p>
- 
-        <p>
-          I received a BSc and an MSc in Economics and Social Sciences from Bocconi University,
-          where I specialized in Behavioral Economics and Industrial Organization. During my masters,
-          I worked on empirical projects in digital markets and ad-tech with
-          <a href="https://sites.google.com/view/francescodecarolis/home" target="_blank" rel="noopener noreferrer">Francesco Decarolis</a>.
-          Before starting my PhD, I also worked for Compass Lexecon (London) and Oxera Consulting LLP
-          in Oxford (UK). A detailed overview of my academic background, research, and experience
-          is available in my curriculum vitae.
+      </article>
+
+      <article class="research-item">
+        <h3>Advertising, Personalization and Search Costs</h3>
+        <p class="research-journal">Accepted, ISMS Marketing Science Conference 2026</p>
+        <p class="research-authors">with Cristobal Cheyre and Alessandro Acquisti</p>
+        <p class="research-abstract">
+          Using a large-scale online field experiment with detailed browsing and ad-exposure data,
+          this project studies how personalized advertising affects consumer search costs, consideration
+          sets, and downstream purchases. We quantify how targeted and contextual ads change search
+          intensity and navigation behavior, shedding light on the dual role of advertising as both an
+          informational device and a potential distortion in consumer decision-making, with implications
+          for industrial organization, consumer protection, and advertising regulation.
         </p>
- 
-        <p>
-          <a href="CV_FIRULLO_MAY2026.pdf" target="_blank" class="cv-link">Download CV (PDF)</a>
+      </article>
+
+      <article class="research-item">
+        <h3>Cursed by the Algorithm: Cue-Triggered Consumption and Platform Recommendation</h3>
+        <p class="research-authors">Solo-authored</p>
+        <p class="research-links">
+          <a class="paper-link"
+             href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6265139"
+             target="_blank" rel="noopener noreferrer">SSRN</a>
         </p>
-      </div>
+        <p class="research-abstract">
+          I study an intermediary that learns what to offer an agent from what she takes up, when
+          take-up is sometimes cue-triggered rather than deliberate. The leading case is an
+          engagement-maximizing recommender serving users who may enter a "hot" state in which one
+          content category is transiently overvalued. The platform observes consumption but not the
+          cognitive state, so compulsion and genuine preference are observationally equivalent at the
+          margin on which it acts, and its cursed learning concentrates triggering content on the users
+          it harms. Standard users converge to the first best. Vulnerable users spiral into
+          disengagement; from small initial vulnerability the spiral ignites if and only if the
+          trigger's genuine weight in preferences is high enough, independently of the strength of the
+          craving, and the welfare loss is hump-shaped in that weight, so the users harmed most have a
+          mild genuine interest in the triggering content. The equilibrium is Pareto-dominated: an
+          informed platform would hold back and earn more. Content caps and minimum-diversity floors on
+          feed composition, applied uniformly, raise welfare without identifying who is vulnerable. When
+          take-up carries a price, as in targeted advertising, the price disciplines the number of
+          impulse purchases but not the overspend within them, and it sharpens the incentive to target.
+        </p>
+        <p class="research-coverage">
+          <strong>Media coverage:</strong>
+          Featured in an interview on
+          <a href="https://www.techpolicy.press/addressing-the-cursed-equilibrium-of-social-media-algorithms/"
+             target="_blank" rel="noopener noreferrer"><em>Tech Policy Press</em></a>.
+        </p>
+      </article>
+
+      <article class="research-item">
+        <h3>An Experimental Infrastructure for Ecologically Valid Studies of Online Advertising, Tracking, and Targeting</h3>
+        <p class="research-authors">with Cristobal Cheyre, Li Jiang, Florian Schaub, Zijun Ding, Yucheng Li, and Alessandro Acquisti</p>
+        <p class="research-abstract">
+          This paper introduces an experimental methodology for studying the impacts of online
+          advertising, tracking, and targeting on users. The infrastructure deploys a client–server
+          architecture that enables randomized field experiments by assigning participants to
+          ad-blocking, anti-tracking, or full ad-exposure conditions, capturing rich longitudinal data
+          across browsers, email, and mobile devices while preserving ecological validity. By combining
+          fine-grained behavioral measures with repeated surveys, it provides a rigorous framework for
+          causal inference on consumer welfare, information-seeking behavior, and privacy in digital
+          advertising markets.
+        </p>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============ WORK IN PROGRESS ============ -->
+  <section class="container section">
+    <h2 class="section-title">Work in progress</h2>
+
+    <div class="research-list">
+
+      <article class="research-item">
+        <h3>SafeFeeds</h3>
+        <p class="research-authors">with Miguel Risco</p>
+        <p class="research-abstract">
+          We study the impact of education and algorithm reset on adolescents' well-being.
+          Social-media recommender systems learn from engagement and can concentrate attention on a
+          narrow set of content, with particular risks for younger users. In a field experiment, we
+          test two low-cost interventions: a digital-literacy component that helps teenagers understand
+          how their feeds are curated, and a reset of the recommendation algorithm that clears its
+          learned profile. We measure how each intervention affects feed composition, time on platform,
+          and self-reported well-being, and whether such uniformly applied tools can improve adolescent
+          outcomes without identifying which users are most at risk.
+        </p>
+      </article>
+
+      <article class="research-item">
+        <h3>Digital Disclosure, Information Avoidance, and Consumer Choice in Online Grocery Markets — An Online Experiment</h3>
+        <p class="research-authors">with Mario Martinez Jimenez</p>
+        <p class="research-abstract">
+          An online grocery experiment that overlays Yuka-style nutritional scores on products as
+          consumers shop, studying how digital disclosure — and consumers' tendency to avoid it —
+          shapes their food choices.
+        </p>
+      </article>
+
+      <article class="research-item">
+        <h3>Consent Without Choice</h3>
+        <p class="research-authors">with Francesco Decarolis, Alessandro Acquisti, and Cristobal Cheyre</p>
+        <p class="research-abstract">
+          Examines how consent banners and choice architecture shape users' privacy decisions online
+          under the GDPR, and what these patterns imply for the design of consent and data-protection rules.
+        </p>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============ POLICY WORK ============ -->
+  <section class="container section">
+    <h2 class="section-title">Policy work</h2>
+
+    <div class="research-list">
+
+      <article class="research-item">
+        <h3>
+          <a href="https://cerre.eu/publications/making-data-protection-fit-for-the-age-of-ai/"
+             target="_blank" rel="noopener noreferrer">
+            Making Data Protection Fit for the Age of AI
+          </a>
+        </h3>
+        <p class="research-journal">CERRE — Centre on Regulation in Europe, 2026</p>
+        <p class="research-authors">with Marco Bassini</p>
+        <p class="research-links">
+          <a class="paper-link"
+             href="https://cerre.eu/wp-content/uploads/2026/06/CERRE_Making-Data-Protection-Fit-for-the-Age-of-AI.pdf"
+             target="_blank" rel="noopener noreferrer">PDF</a>
+        </p>
+        <p class="research-abstract">
+          This CERRE report analyzes the EU's proposed Digital Omnibus and the reform of the GDPR in
+          the age of artificial intelligence, combining legal and economic perspectives. It argues that
+          data protection and AI innovation are not inherently in conflict: in many settings the interests
+          of users and developers are aligned, and the challenge is a framework that does not distinguish
+          the cases where they converge from those where they genuinely diverge. The report assesses key
+          provisions — from the notion of personal data to legitimate interest for AI training and consent
+          management — and proposes a phased path toward a more proportionate, risk-based regime.
+        </p>
+        <p class="research-coverage">
+          <strong>Media coverage:</strong>
+          <a href="https://en.ilsole24ore.com/art/digital-omnibus-challenges-and-uncertainties-eu-reform-data-protection-and-artificial-intelligence-AIza4lxD"
+             target="_blank" rel="noopener noreferrer"><em>Il Sole 24 Ore</em></a>
+          and
+          <a href="https://www.medialaws.eu/news-report-making-data-protection-fit-for-the-age-of-ai/"
+             target="_blank" rel="noopener noreferrer"><em>MediaLaws</em></a>.
+        </p>
+      </article>
+
+      <article class="research-item">
+        <h3>
+          <a href="https://www.cliffordchance.com/content/dam/cliffordchance/Thought_Leadership/unlocking-growth-economic-impact-of-gdpr-decarolis-firullo.pdf"
+             target="_blank" rel="noopener noreferrer">
+            Unlocking Growth: The Economic Effects of GDPR in Europe
+          </a>
+        </h3>
+        <p class="research-journal">Clifford Chance, 2025</p>
+        <p class="research-authors">with Francesco Decarolis</p>
+        <p class="research-abstract">
+          This report studies the economic effects of the General Data Protection Regulation (GDPR) on
+          firm behavior, investment, and innovation across European countries. Bringing together
+          cross-country evidence and institutional variation in enforcement and compliance, it documents
+          the costs GDPR has imposed on firms — including lower profits and reduced investment — and
+          argues for a more proportionate, risk-based approach to data regulation.
+        </p>
+        <p class="research-coverage">
+          <strong>Media coverage:</strong>
+          <a href="https://www.aboutamazon.eu/news/policy/gdprs-economic-footprint-rising-costs-falling-investment-and-shifting-data-quality"
+             target="_blank" rel="noopener noreferrer"><em>About Amazon</em></a>
+          and
+          <a href="https://www.mlex.com/mlex/articles/2406340/gdpr-needs-risk-based-changes-to-combat-heavy-economic-burden-study-finds"
+             target="_blank" rel="noopener noreferrer"><em>MLex</em></a>.
+        </p>
+      </article>
+
+      <article class="research-item">
+        <h3>The Digital Omnibus and the Economic Effects of Centralising Consent</h3>
+        <p class="research-authors">with Francesco Decarolis</p>
+        <p class="research-abstract">
+          Studies the economic effects of centralising consent under the EU's proposed Digital Omnibus,
+          analyzing how moving consent management to a single, browser- or system-level signal would
+          affect users, firms, and competition in digital markets.
+        </p>
+      </article>
+
     </div>
   </section>
 </main>
- 
+
 <footer>
   <div class="container">
     <p>&copy; 2026 Cristiana Firullo. All rights reserved.</p>
     <p>Academic website.</p>
   </div>
 </footer>
- 
+
 <script src="scripts.js"></script>
 </body>
 </html>
- 
