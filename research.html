@@ -5,6 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Research | Cristiana Firullo</title>
 <link rel="stylesheet" href="styles.css">
+<style>
+  details.research-abstract{margin-top:.4rem}
+  details.research-abstract summary{cursor:pointer;font-size:.9em;font-weight:500;opacity:.75;list-style:none;display:inline-flex;align-items:center;gap:.35em}
+  details.research-abstract summary::-webkit-details-marker{display:none}
+  details.research-abstract summary::before{content:"\25B8";display:inline-block;transition:transform .15s}
+  details.research-abstract[open] summary::before{transform:rotate(90deg)}
+  details.research-abstract p{margin-top:.4rem}
+</style>
 </head>
 <body>
 
@@ -34,64 +42,81 @@
     <div class="research-list">
 
       <article class="research-item">
-        <h3>Beyond Search: LLM Adoption and Web Traffic Concentration</h3>
-        <p class="research-award">Best Student Paper Award, WISE 2025</p>
-        <p class="research-authors">with Samira Gholami, Cristobal Cheyre, and Alessandro Acquisti</p>
-        <p class="research-links">
-          <a class="paper-link"
-             href="https://kgi.georgetown.edu/wp-content/uploads/2026/02/Beyond-Search_Gholami_Firullo_Cheyre_Acquisti_79.pdf"
-             target="_blank" rel="noopener noreferrer">PDF</a>
-        </p>
-        <p class="research-abstract">
-          This paper studies how the diffusion of large language models (LLMs) as consumer-facing
-          information intermediaries reshapes web traffic allocation and market concentration.
-          Using large-scale behavioral data, we document substitution patterns between traditional
-          search engines, LLM-based interfaces, and downstream content providers, and show that LLM
-          adoption alters referral flows and concentrates attention away from the open web, with
-          heterogeneous effects across content categories. The results speak to ongoing antitrust and
-          platform-governance debates around AI-driven intermediaries.
-        </p>
-      </article>
-
-      <article class="research-item">
-        <h3>Advertising, Personalization and Search Costs</h3>
-        <p class="research-journal">Accepted, ISMS Marketing Science Conference 2026</p>
+        <h3>The Effects of Advertising and Personalization on Search Costs: Evidence from an Online Field Experiment</h3>
+        <p class="research-award">Job Market Paper</p>
         <p class="research-authors">with Cristobal Cheyre and Alessandro Acquisti</p>
-        <p class="research-abstract">
-          Using a large-scale online field experiment with detailed browsing and ad-exposure data,
-          this project studies how personalized advertising affects consumer search costs, consideration
-          sets, and downstream purchases. We quantify how targeted and contextual ads change search
-          intensity and navigation behavior, shedding light on the dual role of advertising as both an
-          informational device and a potential distortion in consumer decision-making, with implications
-          for industrial organization, consumer protection, and advertising regulation.
-        </p>
+        <details class="research-abstract">
+          <summary>Abstract</summary>
+          <p>We study the impact of advertising and personalization on consumer search costs using data
+          from an online field experiment where participants browse with either advertising blocked, or
+          with behaviorally targeted advertising, or with reduced tracking that limits ad personalization.
+          We introduce a method to identify and analyze shopping intents using browsing and platforms'
+          metadata. Relative to participants who see no advertising, those exposed to targeted advertising
+          spend 24 percent more time per product evaluated and 30 percent more time per shopping intent.
+          Yet they evaluate no more products, visit no more merchants, and purchase products of similar
+          price and quality. Participants exposed to less personalized advertising are statistically
+          indistinguishable from those who see no ads on these outcomes. We then evaluate whether the
+          additional time spent under targeting reflects more intensive product evaluation, using a
+          duration-based search model to estimate how quickly time spent on a product improves the
+          consumer's information about it. Under targeted advertising, this learning rate is about
+          one-third lower than when advertising is blocked, and the time needed to acquire the same
+          information about a product is about twice as high. Thus, the additional search time generated
+          by targeting appears to be less productive rather than more informative. Valuing this additional
+          attention at the opportunity cost of time implies a consumer cost of approximately $15 to $41
+          per participant over three months.</p>
+        </details>
       </article>
 
       <article class="research-item">
-        <h3>Cursed by the Algorithm: Cue-Triggered Consumption and Platform Recommendation</h3>
+        <h3>Consent and Choice: Experimental Evidence on User Behavior at Consent Banners</h3>
+        <p class="research-authors">with Francesco Decarolis, Cristobal Cheyre, and Alessandro Acquisti</p>
+        <details class="research-abstract">
+          <summary>Abstract</summary>
+          <p>Cookie banners appear on websites when visitors first arrive, informing them about a site's use
+          of cookies and tracking technologies, and often asking them whether they consent to their data
+          being collected and shared with third parties. We use a panel of 780 U.S. Chrome users, whose
+          online behaviors were tracked by a browser extension they kept installed for up to three months,
+          to investigate how users interact with cookie banners in the wild, over time, across all the
+          websites they visit. We find that users ignore two in three banners they encounter, and engage
+          with banners mostly on websites that force a response; these websites register three times more
+          banner engagement than the ones where banners can be ignored, but lose more than twice as many
+          visitors after they encounter the banner. Users' explicit choices (accepting or rejecting
+          tracking) exhibit across-user heterogeneity, and are significantly influenced by whether a
+          one-click reject option is offered. We set a single signal from the choices users make during
+          the first third of the days we observe them, and find that this signal is consistent with about
+          two thirds of their later encounters. We calculate that users would spend 58 percent less time
+          on banners if websites could not force a response and engagement on these websites fell to the
+          level observed where banners can be ignored.</p>
+        </details>
+      </article>
+
+      <article class="research-item">
+        <h3>Cursed by the Algorithm: Learning from Behavior That Does Not Reveal Welfare</h3>
         <p class="research-authors">Solo-authored</p>
         <p class="research-links">
           <a class="paper-link"
              href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6265139"
              target="_blank" rel="noopener noreferrer">SSRN</a>
         </p>
-        <p class="research-abstract">
-          I study an intermediary that learns what to offer an agent from what she takes up, when
-          take-up is sometimes cue-triggered rather than deliberate. The leading case is an
-          engagement-maximizing recommender serving users who may enter a "hot" state in which one
-          content category is transiently overvalued. The platform observes consumption but not the
-          cognitive state, so compulsion and genuine preference are observationally equivalent at the
-          margin on which it acts, and its cursed learning concentrates triggering content on the users
-          it harms. Standard users converge to the first best. Vulnerable users spiral into
-          disengagement; from small initial vulnerability the spiral ignites if and only if the
-          trigger's genuine weight in preferences is high enough, independently of the strength of the
-          craving, and the welfare loss is hump-shaped in that weight, so the users harmed most have a
-          mild genuine interest in the triggering content. The equilibrium is Pareto-dominated: an
-          informed platform would hold back and earn more. Content caps and minimum-diversity floors on
-          feed composition, applied uniformly, raise welfare without identifying who is vulnerable. When
-          take-up carries a price, as in targeted advertising, the price disciplines the number of
-          impulse purchases but not the overspend within them, and it sharpens the incentive to target.
-        </p>
+        <details class="research-abstract">
+          <summary>Abstract</summary>
+          <p>Firms often learn what to offer customers from what they take. I ask what happens when some of
+          that take-up is compulsive. An intermediary chooses how many items of each category to offer and
+          treats consumption as taste, but cannot see when a vulnerable agent enters a "hot" state in which
+          their triggering category looks more valuable than on reflection. Agents who never enter the hot
+          state get what they would choose on reflection, whereas vulnerable agents are offered ever more of
+          their triggering category until their welfare falls and they leave. Starting from low
+          vulnerability, this spiral starts only if the agent already likes that category enough. Capping
+          the slots of any one category, or requiring a minimum number of slots for several categories,
+          raises vulnerable agents' welfare at a cost to agents with narrow tastes, without identifying who
+          is vulnerable, and so does a shorter feed, at a cost to agents who use the platform heavily,
+          provided users cannot override it. In simulations of social media, users with a moderate interest
+          in the triggering category are harmed most. With the algorithms that platforms use and tastes
+          observed on a short-video platform, the spiral and its threshold reappear, and the cap protects
+          vulnerable users at almost no cost to others. An informed intermediary would keep vulnerable
+          agents just above the point at which they leave, so information alone does not protect them,
+          whereas the type-blind rules do.</p>
+        </details>
         <p class="research-coverage">
           <strong>Media coverage:</strong>
           Featured in an interview on
@@ -101,18 +126,71 @@
       </article>
 
       <article class="research-item">
+        <h3>Beyond Search: LLM Adoption and Web Traffic Concentration</h3>
+        <p class="research-award">Best Student Paper Award, WISE 2025</p>
+        <p class="research-authors">with Samira Gholami, Cristobal Cheyre, and Alessandro Acquisti</p>
+        <p class="research-links">
+          <a class="paper-link"
+             href="https://kgi.georgetown.edu/wp-content/uploads/2026/02/Beyond-Search_Gholami_Firullo_Cheyre_Acquisti_79.pdf"
+             target="_blank" rel="noopener noreferrer">PDF</a>
+        </p>
+        <details class="research-abstract">
+          <summary>Abstract</summary>
+          <p>Search engines have long served as the primary gateway to the web, dispersing user attention
+          across a wide range of external websites. The rapid adoption of large language models (LLMs),
+          which provide answers directly within platform interfaces, raises concerns that online activity
+          may become more centralized. We study whether LLM adoption displaces traditional web navigation
+          or instead restructures how users discover and consume information. Using nationally
+          representative Comscore panel data from 2019&ndash;2024 and session-level evidence from the
+          Internet Behavior Experiment, we examine how search activity, web exploration, and downstream
+          navigation evolve with LLM use. Exploiting staggered adoption across users, we find that LLM
+          adoption coincides with a sustained increase in the number of unique websites visited, alongside
+          a short-lived rise in traditional search activity, suggesting that LLMs can complement rather
+          than replace search. Session-level analyses show that most LLM use occurs alongside search,
+          while LLM-only sessions remain rare. Moreover, when LLMs do route users to external websites,
+          the resulting traffic is no more concentrated than traffic generated by traditional search.</p>
+        </details>
+      </article>
+
+      <article class="research-item">
+        <h3>Inattention or Avoidance? A Field Infrastructure for Testing Nutritional Labels Online</h3>
+        <p class="research-journal">NET Institute Working Paper</p>
+        <p class="research-authors">with Camilla Cherubini</p>
+        <details class="research-abstract">
+          <summary>Abstract</summary>
+          <p>We build a field infrastructure to test how nutritional information should be displayed online.
+          Its core is a browser extension that changes what Walmart.com shows next to each product and
+          records what shoppers look at and buy, in their own accounts and with their own money. We use it
+          to ask whether shoppers who leave nutritional information unread do so because reading it costs
+          effort or because they would rather not know. In a pilot with 109 U.S. households, the extension
+          shows participants nothing, a 0&ndash;100 nutritional score, the score with the nutrients and
+          additives behind it, or the same label behind one click. We find that participants leave closed
+          96 percent of the labels one click away, and that they open least often the labels of products
+          that score poorly and that they already buy. Participants who see the score alone fill their
+          carts like those who see nothing. Participants who also see the nutrients and additives choose
+          products that score 4.5 points higher within the same type, about 7 percent of the average score,
+          and are 10 percentage points less likely to buy a product rated poor, while participants who have
+          the same label behind one click do not. Participants attribute the same value to keeping the
+          extension in every condition. We read these patterns as preliminary, since they come from a small
+          pilot. The infrastructure could offer an efficient way to test health policy interventions, such
+          as the design of nutritional labels, in real purchases and before they are adopted.</p>
+        </details>
+      </article>
+
+      <article class="research-item">
         <h3>An Experimental Infrastructure for Ecologically Valid Studies of Online Advertising, Tracking, and Targeting</h3>
         <p class="research-authors">with Cristobal Cheyre, Li Jiang, Florian Schaub, Zijun Ding, Yucheng Li, and Alessandro Acquisti</p>
-        <p class="research-abstract">
-          This paper introduces an experimental methodology for studying the impacts of online
+        <details class="research-abstract">
+          <summary>Abstract</summary>
+          <p>This paper introduces an experimental methodology for studying the impacts of online
           advertising, tracking, and targeting on users. The infrastructure deploys a client–server
           architecture that enables randomized field experiments by assigning participants to
           ad-blocking, anti-tracking, or full ad-exposure conditions, capturing rich longitudinal data
           across browsers, email, and mobile devices while preserving ecological validity. By combining
           fine-grained behavioral measures with repeated surveys, it provides a rigorous framework for
           causal inference on consumer welfare, information-seeking behavior, and privacy in digital
-          advertising markets.
-        </p>
+          advertising markets.</p>
+        </details>
       </article>
 
     </div>
@@ -127,34 +205,17 @@
       <article class="research-item">
         <h3>SafeFeeds</h3>
         <p class="research-authors">with Miguel Risco</p>
-        <p class="research-abstract">
-          We study the impact of education and algorithm reset on adolescents' well-being.
+        <details class="research-abstract">
+          <summary>Abstract</summary>
+          <p>We study the impact of education and algorithm reset on adolescents' well-being.
           Social-media recommender systems learn from engagement and can concentrate attention on a
           narrow set of content, with particular risks for younger users. In a field experiment, we
           test two low-cost interventions: a digital-literacy component that helps teenagers understand
           how their feeds are curated, and a reset of the recommendation algorithm that clears its
           learned profile. We measure how each intervention affects feed composition, time on platform,
           and self-reported well-being, and whether such uniformly applied tools can improve adolescent
-          outcomes without identifying which users are most at risk.
-        </p>
-      </article>
-
-      <article class="research-item">
-        <h3>Digital Disclosure, Information Avoidance, and Consumer Choice in Online Grocery Markets — An Online Experiment</h3>
-        <p class="research-abstract">
-          An online grocery experiment that overlays Yuka-style nutritional scores on products as
-          consumers shop, studying how digital disclosure — and consumers' tendency to avoid it —
-          shapes their food choices.
-        </p>
-      </article>
-
-      <article class="research-item">
-        <h3>Consent Without Choice</h3>
-        <p class="research-authors">with Francesco Decarolis, Alessandro Acquisti, and Cristobal Cheyre</p>
-        <p class="research-abstract">
-          Examines how consent banners and choice architecture shape users' privacy decisions online
-          under the GDPR, and what these patterns imply for the design of consent and data-protection rules.
-        </p>
+          outcomes without identifying which users are most at risk.</p>
+        </details>
       </article>
 
     </div>
@@ -173,22 +234,23 @@
             Making Data Protection Fit for the Age of AI
           </a>
         </h3>
-        <p class="research-journal">CERRE — Centre on Regulation in Europe, 2026</p>
+        <p class="research-journal">CERRE, Centre on Regulation in Europe, 2026</p>
         <p class="research-authors">with Marco Bassini</p>
         <p class="research-links">
           <a class="paper-link"
              href="https://cerre.eu/wp-content/uploads/2026/06/CERRE_Making-Data-Protection-Fit-for-the-Age-of-AI.pdf"
              target="_blank" rel="noopener noreferrer">PDF</a>
         </p>
-        <p class="research-abstract">
-          This CERRE report analyzes the EU's proposed Digital Omnibus and the reform of the GDPR in
+        <details class="research-abstract">
+          <summary>Abstract</summary>
+          <p>This CERRE report analyzes the EU's proposed Digital Omnibus and the reform of the GDPR in
           the age of artificial intelligence, combining legal and economic perspectives. It argues that
           data protection and AI innovation are not inherently in conflict: in many settings the interests
           of users and developers are aligned, and the challenge is a framework that does not distinguish
           the cases where they converge from those where they genuinely diverge. The report assesses key
-          provisions — from the notion of personal data to legitimate interest for AI training and consent
-          management — and proposes a phased path toward a more proportionate, risk-based regime.
-        </p>
+          provisions, from the notion of personal data to legitimate interest for AI training and consent
+          management, and proposes a phased path toward a more proportionate, risk-based regime.</p>
+        </details>
         <p class="research-coverage">
           <strong>Media coverage:</strong>
           <a href="https://en.ilsole24ore.com/art/digital-omnibus-challenges-and-uncertainties-eu-reform-data-protection-and-artificial-intelligence-AIza4lxD"
@@ -208,13 +270,14 @@
         </h3>
         <p class="research-journal">Clifford Chance, 2025</p>
         <p class="research-authors">with Francesco Decarolis</p>
-        <p class="research-abstract">
-          This report studies the economic effects of the General Data Protection Regulation (GDPR) on
+        <details class="research-abstract">
+          <summary>Abstract</summary>
+          <p>This report studies the economic effects of the General Data Protection Regulation (GDPR) on
           firm behavior, investment, and innovation across European countries. Bringing together
           cross-country evidence and institutional variation in enforcement and compliance, it documents
-          the costs GDPR has imposed on firms — including lower profits and reduced investment — and
-          argues for a more proportionate, risk-based approach to data regulation.
-        </p>
+          the costs GDPR has imposed on firms, including lower profits and reduced investment, and
+          argues for a more proportionate, risk-based approach to data regulation.</p>
+        </details>
         <p class="research-coverage">
           <strong>Media coverage:</strong>
           <a href="https://www.aboutamazon.eu/news/policy/gdprs-economic-footprint-rising-costs-falling-investment-and-shifting-data-quality"
@@ -228,11 +291,12 @@
       <article class="research-item">
         <h3>The Digital Omnibus and the Economic Effects of Centralising Consent</h3>
         <p class="research-authors">with Francesco Decarolis</p>
-        <p class="research-abstract">
-          Studies the economic effects of centralising consent under the EU's proposed Digital Omnibus,
+        <details class="research-abstract">
+          <summary>Abstract</summary>
+          <p>Studies the economic effects of centralising consent under the EU's proposed Digital Omnibus,
           analyzing how moving consent management to a single, browser- or system-level signal would
-          affect users, firms, and competition in digital markets.
-        </p>
+          affect users, firms, and competition in digital markets.</p>
+        </details>
       </article>
 
     </div>
